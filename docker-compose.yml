@@ -1,0 +1,8 @@
+services: 
+   reactjs-svc:
+    image: reactjs-jenkin
+    build: . 
+    ports: 
+      - 3000:80 
+    pull_policy: build 
+    container_name: jenkin-react-cont
